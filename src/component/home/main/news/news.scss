@@ -1,0 +1,93 @@
+.news{
+    width: 100vw;
+    margin-top: $margin-top-main;
+    height: $width-component-main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a:hover{
+        text-decoration: none;
+    }
+    h3{
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        font-family: $font-family-main;
+        text-align: center;
+    }
+    button{
+        margin-top: 2rem;
+        border-radius: 20px;
+        width: 150px;
+    }
+    .news-list-card{
+        display: flex;
+        width: 100%;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            width: calc(100% / 3 - 60px);
+
+            /* Center slide text vertically */
+        }  
+        .card{
+            border-radius: 12px;
+            position: relative;
+            bottom: 0;
+            img{
+                width: 100%;
+                height: 230px;
+            }
+            .card-body{
+                height: 50%;
+                padding: .5rem .75rem .6rem .75rem;
+                .time-news{
+                    font-size: .85rem;
+                    font-weight: 600;
+                    color: gray;
+                    text-align: left;
+                    margin-bottom: .75rem
+                }
+                .card-title{
+                    margin-bottom: .4rem;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    font-size: 18px;
+                    font-weight: 700;
+                    transition: all .4s ease-in-out;
+                    color: #333;
+                    text-align: left;
+                }
+                .card-text{
+                    -webkit-line-clamp: 2;
+                    height: 40px;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #333;
+                    text-align: left;
+                }
+            }
+            &:hover{
+                cursor: pointer;
+                .card-title{
+                    color: #1fc2d9;
+                }
+            }
+        }
+    }
+}

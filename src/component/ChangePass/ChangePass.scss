@@ -1,0 +1,14 @@
+.dialog-change-pass{
+    .modal-content{
+        border: none;
+    }
+   .modal-header{
+       justify-content: center;
+       color: white;
+       background-color: $color-weith;
+   } 
+   button{
+       background-color: $color-weith;
+       color: white
+   }
+}

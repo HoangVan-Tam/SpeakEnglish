@@ -1,0 +1,80 @@
+.dialog-test{
+    .modal-dialog{
+        max-width: 60vw;
+    }
+    .modal-content{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        .modal-header{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            .modal-title{
+                color: $color-weith-opacity;
+                .ReactCountdownClock{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                }
+            }
+        }
+        .modal-body{
+            table{
+                margin-top: 1rem;
+                thead{
+                    text-align: center;
+                }
+                tbody{
+                    text-align: center;
+                }
+            }
+            .complete-test{
+                color: #1fb141;
+                font-weight: 700;
+                &:hover{
+                    cursor: not-allowed;
+                    text-decoration: underline;
+                }
+            }
+            .not-join-test{
+                color: red;
+                font-weight: 700;
+                &:hover{
+                    cursor: not-allowed;
+                    text-decoration: underline;
+                }
+            }
+            .joinning-test{
+                color: $color;
+                font-weight: 700;
+                &:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+            .not-yet-time-test{
+                color: gray;
+                font-weight: 700;
+                &:hover{
+                    cursor: not-allowed;
+                    text-decoration: underline;
+                }
+            }
+        }
+        // .modal-footer{
+        //     button{
+        //         background-color: $color-weith-opacity;
+        //         color: white;
+        //         border-color: $color-weith-opacity;
+        //         font-weight: 600;
+        //         &:hover{
+        //             background-color: white;
+        //             color: $color-weith-opacity
+        //         }
+        //     }
+        // }
+    }
+}

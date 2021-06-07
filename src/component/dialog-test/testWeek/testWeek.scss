@@ -1,0 +1,95 @@
+.test-week{
+    padding:140px 8rem 140px 8rem;
+    .sure-for-test{
+        width: 100%;
+        text-align: center;
+        margin-top: 5rem;
+        button{
+            margin-top:2rem;
+            background-color: $color;
+            border-color: $color;
+            border-radius: 15px;
+            color: white;
+            width: 150px;
+            height: 45px;
+            &:hover{
+                background-color: transparent;
+                color:$color;
+            }
+        }
+    }
+    .test-week-content{
+        border: 1px solid $color-weith-opacity;
+        padding: 1.5rem;
+        border-radius: 15px;
+        .ReactCountdownClock{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 2rem;
+            .react-countdown-clock{
+                position: absolute;
+                top:-1rem;
+                right: 5rem;
+            }
+        }
+        .question-item{
+            .header-question-item{
+                font-size: 1rem;
+                padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+                span{
+                    color: $color-weith-opacity;
+                    font-weight: 700;
+                }
+            }
+            .answer-question-item{
+                display: flex;
+                flex-direction: row;
+                .row-answer-question-item{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 50%;
+                    .item-answer-question-item{
+                        padding: 0.5rem 2rem 0.5rem 2rem;
+                        span{
+                            width: auto;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                        .answer-chose-item{
+                            color: $color;
+                            font-weight: 600;
+                        }
+
+                    }
+                }
+                
+            }
+        }
+        .button-commit{
+            width: 100%;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            button{
+                bottom: 0;
+                width: 80%;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-weight: 600;
+                font-size: 18px;
+                background-color: $color-weith-opacity;
+                border-radius: 15px;
+                &:hover{
+                    background-color: transparent;
+                    color:$color-weith-opacity;
+                }
+            }
+        }
+    }
+}

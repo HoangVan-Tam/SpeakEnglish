@@ -1,0 +1,152 @@
+.header{
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    .header-head{
+        width: 100vw;
+        height: 50px;
+        background: rgb(41, 41, 41);
+        padding-left: 10%;
+        padding-right: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        span{
+            color: white;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .button-login{
+            color: white;
+            &:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+        .info-acc-header-head{
+            flex-direction: row;
+            align-items: center;
+            list-style: none;
+            color: black;
+            img{
+                width: 30px;
+            }
+            .dropdown{
+                .dropdown-menu{
+                    a{
+                        &:hover{
+                        text-decoration: none;
+                        }
+                        &:focus{
+                            background-color: $color;
+                        }
+                        &:active{
+                            background-color: $color;
+                        }
+                    }
+                    .dropdown-item{
+                        font-size: 1rem;
+                        display: flex;
+                        align-items: center;
+                        svg{
+                            color: $color-weith;
+                        }
+                        span{
+                            color: $color-weith;
+                        }
+                        &:focus{
+                            background-color: $color;
+                        }
+                        &:active{
+                            background-color: $color;
+                        }
+                    }
+                    .log-out-header-head{
+                        svg{color: red ;}
+                        span{color: red;}
+                    }
+                }
+            }
+        }
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 70px;
+        padding-left: 10%;
+        padding-right: 10%;
+        .navbar-brand{
+            border: 2px solid rgba(13, 142, 255, 0.721);
+            color: rgb(13, 142, 255) !important;
+            border-radius: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 20px;
+            margin-right: 5vw;
+        }
+        .navbar-collapse{
+            justify-content: flex-end;
+            .nav-item{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-left: 15px;
+                padding-right: 15px;
+                .nav-link{
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: black;
+                    width: auto;
+                }
+            }
+            button{
+                margin-left: 20px;
+                background-color: #234262;
+                width: 170px;
+                height: 40px;
+                color: white;
+                font-weight: 300;
+                font-size: 16px;
+            }
+            .active-nav-link{
+                border-bottom: 3px solid rgb(84, 84, 182);
+                i{
+                    color: rgb(0, 183, 255);
+                }
+            }
+        }
+    }
+    
+}
+@media (max-width: 575.98px) {
+    .header{
+        .navbar-brand{
+            margin-left: 0px;
+            margin-right: 0;
+            font-size: 10px;
+        }
+        .navbar-brand[css='1']{
+            display: none !important;
+        }
+        .search-icon{
+            font-size: 15px !important;
+        }
+        .nav-item{
+            padding-right: 0;
+            .nav-link{
+                font-size: 20px;
+                width: 100%;
+                i{
+                    margin-right: 10px;
+                }
+            }
+            .active-nav-link{
+                border: 3px solid rgb(84, 84, 182);
+            }
+        }
+    }
+}

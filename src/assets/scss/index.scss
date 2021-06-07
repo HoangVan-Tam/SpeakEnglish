@@ -1,0 +1,31 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import './system.scss';
+//--------------------- Component default -------------------//
+@import "../../component/header/header.scss";
+@import "../../component/footer/footer.scss";
+@import "../../component/register/register.scss";
+@import "../../component/login/login.scss";
+@import "../../component/ChangePass/ChangePass.scss";
+
+//------------------ account -----------------//
+@import "../../component/account/account.scss";
+    @import "../../component/account/schedule/schedule.scss";
+@import "../../component/contact/contact.scss";
+    @import "../../component/contact/detail-contact/detail-contact.scss";
+@import "../../component/roll-call/rollCall.scss";
+
+@import "../../component/newsDetail/newDetail.scss";
+@import "../../component/home/home.scss";
+    @import "../../component/home/IntroducCenter/introducCenter.scss";
+    @import "../../component/home/course/course.scss";
+        @import "../../component/home/course/employy/employee.scss";
+    @import "../../component/home/courseDetail/courseDetail.scss";
+        @import "../../component/home/courseDetail/method/method.scss";
+    @import "../../component/home/newsPage/newPage.scss";
+    //----------------main--------------//
+    @import "../../component/home/main/home-child/form-Admission.scss";
+    @import "../../component/home/main/introdu/introduct.scss";
+    @import "../../component/home/main/educate/education.scss";
+    @import "../../component/home/main/news/news.scss";
+@import "../../component/dialog-test/dialog-test.scss";
+    @import "../../component/dialog-test/testWeek/testWeek.scss";

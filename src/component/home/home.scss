@@ -1,0 +1,80 @@
+.home{
+    width: 100vw;
+    height: auto;
+    padding-top: 120px;
+    .brandcam{
+        width: 100%;
+        height: 500px;
+        background-image: url('../../assets/img/banner-main.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        align-items: center;
+        .container{
+            h3{
+                font-size: 3rem;
+                color: #234262;
+                font-weight: 800;
+                font-family: "Abril Fatface", cursive;
+            }
+            button{
+                width: 170px;
+                height: 60px;
+                margin-right: 1.5rem;
+                margin-top: 1.5rem;
+                font-weight: 600;
+            }
+            button:nth-child(2){
+                background-color: #1fc2d9;
+                border-color: #1fc2d9;
+            }
+            button:nth-child(2):hover{
+                color: #1fc2d9;
+                background-color: white;
+                border-color: #1fc2d9;
+            }
+            button:nth-child(3){
+                background-color: white;
+                border-color: #77899d;
+                color: #77899d;
+            }
+            button:nth-child(3):hover{
+                color: white;
+                background-color: #77899d;
+                border-color: #77899d;
+            }
+            button:focus{
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+            button:active{
+                -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+    .ads-quality{
+        margin-top: $margin-top-main;
+        .row{
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 20%;
+                border: 1px solid #1fc2d9 ;
+                border-radius: 7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                span{
+                    font-size: 4rem;
+                    color: #1fc2d9;
+                }
+                p{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
